@@ -8,6 +8,7 @@ $(".drum-pad").on("click", (event) => {
 // id, and will display the id of it's parent element
 $(document).on("keypress", (event) => {
   let keyPressed = String.fromCharCode(event.which).toUpperCase();
-  $(`#${keyPressed}`).trigger("play");
-  $("#display").text($(`#${keyPressed}`).parent().attr("id"));
+  $(`#${keyPressed}`).parent().click();
+  //$(`#${keyPressed}`).trigger("play");
+  //$("#display").text($(`#${keyPressed}`).parent().attr("id"));
 });

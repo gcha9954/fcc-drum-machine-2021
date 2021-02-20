@@ -1,3 +1,15 @@
+body {
+  height: 100vh;
+}
+
+#keypad {
+  margin-right: 40px;
+}
+
+#display {
+  width: 100px;
+}
+
 button {
   height: 50px;
   width: 50px;
